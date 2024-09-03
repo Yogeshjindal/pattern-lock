@@ -137,12 +137,16 @@ class PatternLockView : GridLayout {
         return true
     }
 
+   
     private fun handleActionMove(event: MotionEvent) {
         var hitCell = getHitCell(event.x.toInt(), event.y.toInt())
         if (hitCell != null) {
-            if (!selectedCells.contains(hitCell)) {
+            //Log.i("ptrn", hitCell.toString()+"")
+            // vijay - mpattern
+            //if (!selectedCells.contains(hitCell))
+            //{
                 notifyCellSelected(hitCell)
-            }
+            //}
         }
 
         lastX = event.x
