@@ -142,7 +142,7 @@ class PatternLockView : GridLayout {
         var hitCell = getHitCell(event.x.toInt(), event.y.toInt())
         if (hitCell != null) {
             //Log.i("ptrn", hitCell.toString()+"")
-            // vijay - mpattern
+            // yogesh - mpattern
             //if (!selectedCells.contains(hitCell))
             //{
                 notifyCellSelected(hitCell)
